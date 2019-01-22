@@ -117,6 +117,10 @@ open class MSGInputView: UIControl {
 }
 
 extension MSGInputView: MSGPlaceholderTextViewDelegate {
+    
+    public func textViewDidBeginEditing(_ textView: UITextView) {
+    }
+    
 
     open func textViewDidChange(_ textView: UITextView) {
         sendButton.isEnabled = textView.text != ""

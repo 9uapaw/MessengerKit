@@ -150,10 +150,15 @@ extension MSGPlaceholderTextView: UITextViewDelegate {
         label.isHidden = textView.text != ""
     }
     
+    public func textViewDidBeginEditing(_ textView: UITextView) {
+        delegate?.textViewDidBeginEditing(textView)
+    }
+    
 }
 
 public protocol MSGPlaceholderTextViewDelegate: NSObjectProtocol {
     
     func textViewDidChange(_ textView: UITextView)
-    
+    func textViewDidBeginEditing(_ textView: UITextView)
+
 }
