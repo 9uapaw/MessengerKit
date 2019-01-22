@@ -19,6 +19,7 @@
 		2397AC2A2FB5BD0CF3C80EF752A63EC6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		23ACF3C0970AA9F0F5FB5FC1C02A075A /* MSGMessengerStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BED293C940F140B81231ADEA378FD9 /* MSGMessengerStyle.swift */; };
 		2988A2325ABF210DBE38A4DD2578FBCF /* MSGTravIncomingBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C919752D2E97817003A98CBA480B64 /* MSGTravIncomingBubble.swift */; };
+		391ED97221F74E160047708C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 467620EF3914A436E960B7943FA2259B /* Assets.xcassets */; };
 		396A7AAB7D2C16470AFCAE3C394E9E49 /* MSGTravOutgoingBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A96ACA4416251CC4CE85F3AC40A2C /* MSGTravOutgoingBubble.swift */; };
 		3B028645C11B4DD918303E42C1C61EB1 /* MessengerKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA0DE54C5687888F125BA7336C536F0 /* MessengerKit-dummy.m */; };
 		3CA5C6D8A29FDB5F9FE6108E1DE42C11 /* MSGInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6B266C36D217DC7E33D471BE3B4D5B /* MSGInputView.swift */; };
@@ -840,6 +841,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				391ED97221F74E160047708C /* Assets.xcassets in Resources */,
 				D95F003C61F4431C76CCCEB724D15826 /* MessengerKit.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
