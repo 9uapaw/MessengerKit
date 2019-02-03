@@ -16,7 +16,7 @@ public class MSGMessage: NSObject{
     public let id: Int
     
     /// The body of the message.
-    public let body: MSGMessageBody
+    public var body: MSGMessageBody
     
     /// The user that sent the message.
     public let user: MSGUser
