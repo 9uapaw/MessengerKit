@@ -119,6 +119,8 @@ open class MSGInputView: UIControl {
 extension MSGInputView: MSGPlaceholderTextViewDelegate {
     
     public func textViewDidBeginEditing(_ textView: UITextView) {
+        // TODO: Remove
+        // Comment added for testing
     }
     
 
