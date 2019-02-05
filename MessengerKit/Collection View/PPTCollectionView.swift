@@ -13,8 +13,8 @@ open class PPTCollectionView: MSGImessageCollectionView {
     override open func registerCells() {
         super.registerCells()
         
-        register(UINib(nibName: "CustomOutgoingTextCell", bundle: nil), forCellWithReuseIdentifier: "outgoingText")
-        register(UINib(nibName: "CustomIncomingTextCell", bundle: nil), forCellWithReuseIdentifier: "incomingText")
+        register(UINib(nibName: "PPTOutgoingTextCell", bundle: nil), forCellWithReuseIdentifier: "outgoingText")
+        register(UINib(nibName: "PPTIncomingTextCell", bundle: nil), forCellWithReuseIdentifier: "incomingText")
     }
 
 }
