@@ -6,44 +6,44 @@
 //  Copyright © 2018 CocoaPods. All rights reserved.
 //
 
-struct PPTStyle: MSGMessengerStyle {
+public struct PPTStyle: MSGMessengerStyle {
     
-    var collectionView: MSGCollectionView.Type = PPTCollectionView.self
+    public var collectionView: MSGCollectionView.Type = PPTCollectionView.self
     
-    var inputView: MSGInputView.Type = MSGImessageInputView.self //CustomMessageInputView.self
+    public var inputView: MSGInputView.Type = MSGImessageInputView.self //CustomMessageInputView.self
     
-    var headerHeight: CGFloat = 12.0
+    public var headerHeight: CGFloat = 12.0
     
-    var footerHeight: CGFloat = 12.0
+    public var footerHeight: CGFloat = 12.0
     
 //    var style = MessengerKit.Styles.iMessage
 //    style.headerHeight = 0
 //    style.inputPlaceholder = "Message"
 //    style.alwaysDisplayTails = false
     var outgoingBubbleColor = UIColor(white: 1, alpha: 1)
-    var outgoingTextColor = UIColor(white: 0, alpha: 1)
+    public var outgoingTextColor = UIColor(white: 0, alpha: 1)
     var incomingBubbleColor = UIColor(rgb: PPTColors.activeCategoryColor)
-    var incomingTextColor = UIColor(white: 1, alpha: 1)
-    var backgroundColor = UIColor(rgb: PPTColors.lightBackgroundColor)
-    var inputViewBackgroundColor = UIColor(rgb: PPTColors.lightBackgroundColor)
+    public var incomingTextColor = UIColor(white: 1, alpha: 1)
+    public var backgroundColor = UIColor(rgb: PPTColors.lightBackgroundColor)
+    public var inputViewBackgroundColor = UIColor(rgb: PPTColors.lightBackgroundColor)
     
     var alwaysDisplayTails = false
     
-    var font: UIFont = .preferredFont(forTextStyle: .body)
+    public var font: UIFont = .preferredFont(forTextStyle: .body)
     
-    var inputFont: UIFont = .systemFont(ofSize: 14)
+    public var inputFont: UIFont = .systemFont(ofSize: 14)
     
-    var inputPlaceholder: String = "Message"
+    public var inputPlaceholder: String = "Message"
     
-    var inputTextColor: UIColor = .darkText
+    public var inputTextColor: UIColor = .darkText
     
-    var inputPlaceholderTextColor: UIColor = .lightGray
+    public var inputPlaceholderTextColor: UIColor = .lightGray
     
-    var outgoingLinkColor: UIColor = .blue
+    public var outgoingLinkColor: UIColor = .blue
     
-    var incomingLinkColor: UIColor = .blue
+    public var incomingLinkColor: UIColor = .blue
     
-    func size(for message: MSGMessage, in collectionView: UICollectionView) -> CGSize {
+    public func size(for message: MSGMessage, in collectionView: UICollectionView) -> CGSize {
         var size: CGSize!
         
         switch message.body {

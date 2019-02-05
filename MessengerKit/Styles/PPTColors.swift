@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct PPTColors {
+public struct PPTColors {
 
     static let hamburgerMenuButtonColor = 0x54655F
     static let lightBackgroundColor = 0xD4F4EB

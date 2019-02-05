@@ -8,11 +8,11 @@
 
 import UIKit
 
-class PPTMessageSendButton: UIButton {
+open class PPTMessageSendButton: UIButton {
 
     let overlay = CALayer()
     
-    override var isEnabled: Bool {
+    override open var isEnabled: Bool {
         didSet {
             UIView.animate(withDuration: 0.3) {
                 self.alpha = self.isEnabled ? 1 : 0.3
@@ -20,13 +20,13 @@ class PPTMessageSendButton: UIButton {
         }
     }
     
-    override var isHighlighted: Bool {
+    override open var isHighlighted: Bool {
         didSet {
             overlay.isHidden = !isHighlighted
         }
     }
     
-    override func layoutSubviews() {
+    override open func layoutSubviews() {
         super.layoutSubviews()
         overlay.frame = layer.bounds
     }
@@ -36,7 +36,7 @@ class PPTMessageSendButton: UIButton {
         setup()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setup()
     }

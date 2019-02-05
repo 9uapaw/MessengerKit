@@ -8,9 +8,9 @@
 
 import UIKit
 
-class PPTCollectionView: MSGImessageCollectionView {
+open class PPTCollectionView: MSGImessageCollectionView {
 
-    override func registerCells() {
+    override open func registerCells() {
         super.registerCells()
         
         register(UINib(nibName: "CustomOutgoingTextCell", bundle: nil), forCellWithReuseIdentifier: "outgoingText")

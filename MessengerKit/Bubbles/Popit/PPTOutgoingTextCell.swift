@@ -10,7 +10,7 @@ import UIKit
 
 import SDWebImage
 
-class CustomTextCell: MSGMessageCell {
+open class CustomTextCell: MSGMessageCell {
 
     @IBOutlet weak var bubble: PPTBubble!
     
@@ -35,7 +35,7 @@ class CustomTextCell: MSGMessageCell {
         }
     }
     
-    override var style: MSGMessengerStyle? {
+    override open var style: MSGMessengerStyle? {
         didSet {
             guard let style = style as? PPTStyle, let message = message else { return }
 //            bubble.layer.borderColor = message.user.isSender ? style.outgoingBorderColor.cgColor : style.incomingBorderColor.cgColor
@@ -53,7 +53,7 @@ class CustomTextCell: MSGMessageCell {
     }
     
     
-    override func awakeFromNib() {
+    override open func awakeFromNib() {
         super.awakeFromNib()
         avatarView?.layer.cornerRadius = 24
         avatarView?.layer.masksToBounds = true

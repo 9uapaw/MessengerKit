@@ -8,9 +8,9 @@
 
 import UIKit
 
-class PPTBubble: UITextView {
+open class PPTBubble: UITextView {
     
-    override var canBecomeFirstResponder: Bool {
+    override open var canBecomeFirstResponder: Bool {
         return false
     }
     
@@ -19,7 +19,7 @@ class PPTBubble: UITextView {
         setupView()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setupView()
     }
@@ -58,7 +58,7 @@ class PPTBubble: UITextView {
     }
     
     // Disables text selection
-    override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
+    override open func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
         
         guard let pos = closestPosition(to: point) else {
             return false

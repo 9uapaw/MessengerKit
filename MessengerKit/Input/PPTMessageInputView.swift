@@ -10,10 +10,10 @@ import UIKit
 
 open class PPTMessageInputView: MSGInputView {
     
-//    override open class var nib: UINib? {
-//        return UINib(nibName: "CustomMessageInputView",
-//                     bundle: nil)
-//    }
+    override open class var nib: UINib? {
+        return UINib(nibName: "PPTMessageInputView",
+                     bundle: nil)
+    }
     
 //    required public override init(frame: CGRect) {
 //        super.init(frame: frame)
