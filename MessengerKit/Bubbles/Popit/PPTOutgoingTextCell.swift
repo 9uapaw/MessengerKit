@@ -8,7 +8,6 @@
 
 import UIKit
 
-import MessengerKit
 import SDWebImage
 
 class CustomTextCell: MSGMessageCell {

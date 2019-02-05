@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import MessengerKit
 
 open class PPTMessageInputView: MSGInputView {
     
