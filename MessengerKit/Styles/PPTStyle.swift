@@ -8,9 +8,11 @@
 
 public struct PPTStyle: MSGMessengerStyle {
     
+    public init() {}
+    
     public var collectionView: MSGCollectionView.Type = PPTCollectionView.self
     
-    public var inputView: MSGInputView.Type = MSGImessageInputView.self //CustomMessageInputView.self
+    public var inputView: MSGInputView.Type = PPTMessageInputView.self
     
     public var headerHeight: CGFloat = 12.0
     
@@ -20,9 +22,9 @@ public struct PPTStyle: MSGMessengerStyle {
 //    style.headerHeight = 0
 //    style.inputPlaceholder = "Message"
 //    style.alwaysDisplayTails = false
-    var outgoingBubbleColor = UIColor(white: 1, alpha: 1)
+    public var outgoingBubbleColor = UIColor(white: 1, alpha: 1)
     public var outgoingTextColor = UIColor(white: 0, alpha: 1)
-    var incomingBubbleColor = UIColor(rgb: PPTColors.activeCategoryColor)
+    public var incomingBubbleColor = UIColor(rgb: PPTColors.activeCategoryColor)
     public var incomingTextColor = UIColor(white: 1, alpha: 1)
     public var backgroundColor = UIColor(rgb: PPTColors.lightBackgroundColor)
     public var inputViewBackgroundColor = UIColor(rgb: PPTColors.lightBackgroundColor)
@@ -76,8 +78,8 @@ public struct PPTStyle: MSGMessengerStyle {
     
     // MARK - Custom Properties
     
-    var incomingBorderColor: UIColor = .white
+    public var incomingBorderColor: UIColor = .white
     
-    var outgoingBorderColor: UIColor = UIColor(hue:0.91, saturation:0.70, brightness:0.85, alpha:1.00)
+    public var outgoingBorderColor: UIColor = UIColor(hue:0.91, saturation:0.70, brightness:0.85, alpha:1.00)
     
 }
