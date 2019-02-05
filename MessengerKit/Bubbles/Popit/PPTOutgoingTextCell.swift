@@ -10,7 +10,7 @@ import UIKit
 
 import SDWebImage
 
-open class CustomTextCell: MSGMessageCell {
+open class PPTTextCell: MSGMessageCell {
 
     @IBOutlet weak var bubble: PPTBubble!
     

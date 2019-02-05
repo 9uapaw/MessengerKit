@@ -10,7 +10,7 @@ import Foundation
 
 import SDWebImage
 
-open class Custom2TextCell: MSGMessageCell {
+open class PPT2TextCell: MSGMessageCell {
     
     @IBOutlet weak var bubble: PPTBubble!
     
