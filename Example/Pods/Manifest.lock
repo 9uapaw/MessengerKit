@@ -1,16 +1,27 @@
 PODS:
-  - MessengerKit (0.1.0)
+  - MessengerKit (1.0.0):
+    - MessengerKit/Default (= 1.0.0)
+  - MessengerKit/Default (1.0.0):
+    - SDWebImage (~> 4.0)
+  - SDWebImage (4.4.5):
+    - SDWebImage/Core (= 4.4.5)
+  - SDWebImage/Core (4.4.5)
 
 DEPENDENCIES:
   - MessengerKit (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SDWebImage
 
 EXTERNAL SOURCES:
   MessengerKit:
     :path: "../"
 
 SPEC CHECKSUMS:
-  MessengerKit: 892fdf259f354b32e0c92146a82e2c9432182ec9
+  MessengerKit: 4c2c65ad9f67140edf652c5265e63012c71a17a5
+  SDWebImage: ecc03494e973b93b80213649d32175f8d2d17d4d
 
 PODFILE CHECKSUM: aaa0affedafb7fc2bd49bff77dbec8cb8ca43ebd
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.5.3

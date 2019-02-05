@@ -42,5 +42,9 @@ The framework was built for and is used in production at [Travamigos](https://tr
 
   s.source_files = ['MessengerKit/**/*.{h,m,swift}']
   s.resources = 'MessengerKit/**/*.{xcassets,xib,nib}'
+
+  s.subspec 'Default' do |ss|
+    ss.dependency "SDWebImage", "~> 4.0"
+  end
   
 end
