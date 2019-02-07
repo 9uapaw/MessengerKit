@@ -8,10 +8,12 @@
 
 import UIKit
 
-open class PPTCollectionView: MSGImessageCollectionView {
+open class PPTCollectionView: MSGCollectionView {
 
     override open func registerCells() {
         super.registerCells()
+        
+        collectionViewLayout = MSGImessageCollectionViewFlowLayout()
         
         register(UINib(nibName: "PPTOutgoingTextCell", bundle: nil), forCellWithReuseIdentifier: "outgoingText")
         register(UINib(nibName: "PPTIncomingTextCell", bundle: nil), forCellWithReuseIdentifier: "incomingText")

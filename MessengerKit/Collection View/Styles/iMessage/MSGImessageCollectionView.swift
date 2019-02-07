@@ -17,10 +17,13 @@ open class MSGImessageCollectionView: MSGCollectionView {
         
         // Text
         
-        register(UINib(nibName: "MSGOutgoingTailCollectionViewCell", bundle: MessengerKit.bundle),
-                 forCellWithReuseIdentifier: "outgoingText")
-        register(UINib(nibName: "MSGIncomingTailCollectionViewCell", bundle: MessengerKit.bundle),
-                 forCellWithReuseIdentifier: "incomingText")
+//        register(UINib(nibName: "MSGOutgoingTailCollectionViewCell", bundle: MessengerKit.bundle),
+//                 forCellWithReuseIdentifier: "outgoingText")
+//        register(UINib(nibName: "MSGIncomingTailCollectionViewCell", bundle: MessengerKit.bundle),
+//                 forCellWithReuseIdentifier: "incomingText")
+        
+        register(UINib(nibName: "PPTOutgoingTextCell", bundle: MessengerKit.bundle), forCellWithReuseIdentifier: "outgoingText")
+        register(UINib(nibName: "PPTIncomingTextCell", bundle: MessengerKit.bundle), forCellWithReuseIdentifier: "incomingText")
         
         // Emoji
         

@@ -19,12 +19,12 @@ public class MSGMessage: NSObject{
     public var body: MSGMessageBody
     
     /// The user that sent the message.
-    public let user: MSGUser
+    public let user: PPTChatUser
     
     /// The time that the message was sent.
     public let sentAt: Date
     
-    public init(id: Int, body: MSGMessageBody, user: MSGUser, sentAt: Date) {
+    public init(id: Int, body: MSGMessageBody, user: PPTChatUser, sentAt: Date) {
         self.id = id
         self.body = body
         self.user = user

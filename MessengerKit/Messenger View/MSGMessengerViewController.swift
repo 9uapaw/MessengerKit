@@ -22,11 +22,12 @@ open class MSGMessengerViewController: UIViewController {
         var inputView: MSGInputView!
         
         if let nib = style.inputView.nib,
-        let view = nib.instantiate(withOwner: self, options: nil).first as? MSGInputView {
+           let view = nib.instantiate(withOwner: self, options: nil).first as? MSGInputView {
             inputView = view
         } else {
             inputView = style.inputView.init()
         }
+//        inputView = style.inputView.init()
         
         inputView.style = style
         inputView.tintColor = tintColor
@@ -97,7 +98,8 @@ open class MSGMessengerViewController: UIViewController {
         super.viewDidLoad()
         
         if tintColor == nil {
-            tintColor = view.tintColor
+//            tintColor = view.tintColor
+            tintColor = UIColor(rgb: PPTColors.navigationBarColor)
         }
         
         view.backgroundColor = style.backgroundColor
@@ -159,6 +161,7 @@ open class MSGMessengerViewController: UIViewController {
     
         messageInputView.addTarget(self, action: #selector(inputViewDidChange(inputView:)), for: .valueChanged)
         messageInputView.addTarget(self, action: #selector(inputViewPrimaryActionTriggered(inputView:)), for: .primaryActionTriggered)
+//        messageInputView.addTarget(self, action: #selector(inputViewSecondaryActionTriggered(inputView:)), for: .secondaryActionTriggered)
     }
     
     open func setupCollectionView() {
@@ -189,6 +192,8 @@ open class MSGMessengerViewController: UIViewController {
     @objc open dynamic func inputViewDidChange(inputView: MSGInputView) { }
     
     @objc open dynamic func inputViewPrimaryActionTriggered(inputView: MSGInputView) { }
+    
+    @objc open dynamic func inputViewSecondaryActionTriggered(inputView: MSGInputView) { }
     
     
     // MARK: - Keyboard

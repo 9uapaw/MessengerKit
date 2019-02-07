@@ -28,7 +28,7 @@ open class PPT2TextCell: MSGMessageCell {
             bubble.text = body
             bubble.backgroundColor = message.user.isSender ? .white : UIColor(rgb: PPTColors.tabBarColor)
             
-            if let user = message.user as? ChatUser {
+            if let user = message.user as? PPTChatUser {
                 avatarView?.sd_setImage(with: user.avatarUrl, completed: nil)
             }
         }

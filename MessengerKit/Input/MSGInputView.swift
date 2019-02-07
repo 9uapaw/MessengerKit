@@ -18,6 +18,9 @@ open class MSGInputView: UIControl {
     /// The send button
     @IBOutlet public var sendButton: UIButton!
 
+    /// The attachment button
+    @IBOutlet public var attachmentButton: UIButton!
+    
     /// The height constraint to be modified as required.
     /// This should not be set manually but instead use the `minHeight` and `maxHeight` properties.
     private var heightConstraint: NSLayoutConstraint!
@@ -83,6 +86,7 @@ open class MSGInputView: UIControl {
         addHeightConstraints()
         setupTextView()
         setupSendButton()
+        setupAttachmentButton()
     }
 
     private func addHeightConstraints() {
@@ -99,11 +103,25 @@ open class MSGInputView: UIControl {
         sendButton.isEnabled = false
         sendButton.addTarget(self, action: #selector(sendButtonTapped(_:)), for: .touchUpInside)
     }
+    
+    private func setupAttachmentButton() {
+        attachmentButton.tintColor = UIColor(rgb: PPTColors.navigationBarColor)
+        attachmentButton.layer.masksToBounds = true
+        attachmentButton.layer.cornerRadius = attachmentButton.bounds.height / 2
+        attachmentButton.isEnabled = true
+        attachmentButton.addTarget(self, action: #selector(attachmentButtonTapped(_:)), for: .touchUpInside)
+
+    }
 
     @objc func sendButtonTapped(_ sender: UIButton) {
         message = textView.text
         textView.text = nil
         sendActions(for: .primaryActionTriggered)
+    }
+    
+    @objc func attachmentButtonTapped(_ sender: UIButton) {
+        print("asdasd")
+//        sendActions(for: .)
     }
     
     @discardableResult open override func resignFirstResponder() -> Bool {

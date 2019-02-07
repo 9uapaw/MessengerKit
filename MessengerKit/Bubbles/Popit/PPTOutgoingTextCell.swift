@@ -10,7 +10,7 @@ import UIKit
 
 import SDWebImage
 
-open class PPTTextCell: MSGMessageCell {
+open class PPTOutgoingTextCell: MSGMessageCell {
 
     @IBOutlet weak var bubble: PPTBubble!
     
@@ -29,7 +29,7 @@ open class PPTTextCell: MSGMessageCell {
             bubble.backgroundColor = message.user.isSender ? UIColor(rgb: PPTColors.outgoingBubbleBGColor) : UIColor(rgb: PPTColors.tabBarColor)
             bubble.textAlignment = .left
             
-            if let user = message.user as? ChatUser {
+            if let user = message.user as? PPTChatUser {
                 avatarView?.sd_setImage(with: user.avatarUrl, completed: nil)
             }
         }

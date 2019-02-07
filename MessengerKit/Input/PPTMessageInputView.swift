@@ -12,7 +12,7 @@ open class PPTMessageInputView: MSGInputView {
     
     override open class var nib: UINib? {
         return UINib(nibName: "PPTMessageInputView",
-                     bundle: nil)
+                     bundle: MessengerKit.bundle)
     }
     
 //    required public override init(frame: CGRect) {
@@ -42,7 +42,7 @@ open class PPTMessageInputView: MSGInputView {
         textView.layer.borderWidth = 0.5
         textView.layer.cornerRadius = (sendButton.bounds.height / 2) + 2
         
-        textView.textContainerInset = UIEdgeInsetsMake(10, 10, 10, 40)
+        textView.textContainerInset = UIEdgeInsetsMake(10, 10, 10, 80)
     }
     
 }

@@ -10,9 +10,9 @@ public struct PPTStyle: MSGMessengerStyle {
     
     public init() {}
     
-    public var collectionView: MSGCollectionView.Type = PPTCollectionView.self
+    public var collectionView: MSGCollectionView.Type = MSGImessageCollectionView.self //PPTCollectionView.self
     
-    public var inputView: MSGInputView.Type = PPTMessageInputView.self
+    public var inputView: MSGInputView.Type = MSGImessageInputView.self // PPTMessageInputView.self
     
     public var headerHeight: CGFloat = 12.0
     
